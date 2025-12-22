@@ -622,7 +622,7 @@ set_parameter(device=device, name="bot_bias", value=2.0)
 # # - bias
 # # guardar resultados
 
-
+get_edge_model_list()
 
 # # ============================================================
 # # FIN DEL SCRIPT
