@@ -115,3 +115,8 @@ Edge fluxes are computed using methods like Scharfetter–Gummel to ensure conti
 | **NodeModel** | Algebraic expression evaluated at nodes     | `NetDoping`, `Charge`, `G_rad` |
 | **EdgeModel** | Expression evaluated on edges               | `ElectricField`, `Current` |
 
+## Material Experiment in 2D
+
+$$
+\nabla \cdot (\nabla \phi) = -\rho
+$$
