@@ -117,6 +117,9 @@ Edge fluxes are computed using methods like Scharfetter–Gummel to ensure conti
 
 ## Material Experiment in 2D
 
+### Experiment of the BOX
+
+The Box when is radiated by TID since it is an insulator we can soupossed that it follows Poisson's equation but the charge density is a fixed charge given by the gamma ray impacting with the material. 
 $$
 \nabla \cdot (\nabla \phi) = -\rho
 $$
