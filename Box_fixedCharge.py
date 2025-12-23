@@ -19,7 +19,7 @@ q = 1.602e-19           # Coulomb
 eps_0 = 8.85e-6         # F / µm
 eps_ox = 3.9
 
-device = "SOI_Waveguide"
+device = "BOX_WG"
 region = "BOX"
 
 # -------------------------------------------------
@@ -27,28 +27,11 @@ region = "BOX"
 # -------------------------------------------------
 create_gmsh_mesh(mesh=device, file="Rectangle_2D_Lines.msh")
 
-add_gmsh_region(
-    mesh=device,
-    gmsh_name="BOX",
-    region=region,
-    material="SiO2"
-)
+add_gmsh_region(mesh=device, gmsh_name="BOX", region=region, material="SiO2")
 
-add_gmsh_contact(
-    mesh=device,
-    gmsh_name="bot_contact",
-    region=region,
-    material="metal",
-    name="bot"
-)
+add_gmsh_contact(mesh=device, gmsh_name="bot_contact", region=region, material="metal", name="bot" )
 
-add_gmsh_contact(
-    mesh=device,
-    gmsh_name="top_contact",
-    region=region,
-    material="metal",
-    name="top"
-)
+add_gmsh_contact( mesh=device, gmsh_name="top_contact", region=region, material="metal", name="top" )
 
 finalize_mesh(mesh=device)
 create_device(mesh=device, device=device)
